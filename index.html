@@ -1,24 +1,125 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<title>Welcome to aifeer.com!</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI 工具导航</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>Welcome to aifeer.com!</h1>
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <nav class="quick-links" aria-label="常用链接">
+    <div class="quick-links-inner">
+      <span class="quick-links-label">常用</span>
+      <ul class="quick-links-list">
+        <li><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
+        <li><a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a></li>
+        <li><a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Gemini</a></li>
+        <li><a href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer">DeepSeek</a></li>
+        <li><a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">Copilot</a></li>
+        <li><a href="https://cursor.com" target="_blank" rel="noopener noreferrer">Cursor</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">AI Hub</h1>
+      <p class="tagline">常用人工智能工具与服务的快捷入口</p>
+      <div class="search-wrap">
+        <label for="q" class="sr-only">搜索站点</label>
+        <input type="search" id="q" class="search-input" placeholder="按名称或描述筛选…" autocomplete="off" />
+      </div>
+    </div>
+  </header>
 
-<p>For online documentation and support please refer to
-<a href="http://aifeer.com/">aifeer.com</a>.<br/>
-Commercial support is available at
-<a href="http://www.aifeer.com/">aifeer.com</a>.</p>
+  <main class="main">
+    <section class="category" data-category="对话与助手">
+      <h2 class="category-title">对话与助手</h2>
+      <ul class="card-list">
+        <li><a class="card" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" data-keywords="openai gpt">ChatGPT <span class="card-desc">OpenAI 对话</span></a></li>
+        <li><a class="card" href="https://claude.ai" target="_blank" rel="noopener noreferrer" data-keywords="anthropic">Claude <span class="card-desc">Anthropic</span></a></li>
+        <li><a class="card" href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" data-keywords="google">Gemini <span class="card-desc">Google</span></a></li>
+        <li><a class="card" href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer" data-keywords="深度求索">DeepSeek <span class="card-desc">深度求索</span></a></li>
+        <li><a class="card" href="https://www.doubao.com" target="_blank" rel="noopener noreferrer" data-keywords="字节 豆包">豆包 <span class="card-desc">字节跳动</span></a></li>
+        <li><a class="card" href="https://tongyi.aliyun.com" target="_blank" rel="noopener noreferrer" data-keywords="阿里 通义">通义千问 <span class="card-desc">阿里云</span></a></li>
+        <li><a class="card" href="https://yiyan.baidu.com" target="_blank" rel="noopener noreferrer" data-keywords="百度 文心">文心一言 <span class="card-desc">百度</span></a></li>
+        <li><a class="card" href="https://kimi.moonshot.cn" target="_blank" rel="noopener noreferrer" data-keywords="月之暗面">Kimi <span class="card-desc">月之暗面</span></a></li>
+        <li><a class="card" href="https://chatglm.cn" target="_blank" rel="noopener noreferrer" data-keywords="智谱">智谱清言 <span class="card-desc">智谱 AI</span></a></li>
+        <li><a class="card" href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer" data-keywords="微软">Microsoft Copilot <span class="card-desc">微软</span></a></li>
+        <li><a class="card" href="https://poe.com" target="_blank" rel="noopener noreferrer" data-keywords="多模型">Poe <span class="card-desc">多模型聚合</span></a></li>
+      </ul>
+    </section>
 
-<p><em>Thank you for using aifeer.com</em></p>
+    <section class="category" data-category="编程与开发">
+      <h2 class="category-title">编程与开发</h2>
+      <ul class="card-list">
+        <li><a class="card" href="https://cursor.com" target="_blank" rel="noopener noreferrer" data-keywords="ide 编辑器">Cursor <span class="card-desc">AI 代码编辑器</span></a></li>
+        <li><a class="card" href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer" data-keywords="github">GitHub Copilot <span class="card-desc">代码补全</span></a></li>
+        <li><a class="card" href="https://v0.dev" target="_blank" rel="noopener noreferrer" data-keywords="ui react">v0 <span class="card-desc">UI 生成</span></a></li>
+        <li><a class="card" href="https://bolt.new" target="_blank" rel="noopener noreferrer" data-keywords="全栈">Bolt.new <span class="card-desc">全栈原型</span></a></li>
+        <li><a class="card" href="https://replit.com" target="_blank" rel="noopener noreferrer" data-keywords="在线 ide">Replit <span class="card-desc">在线开发与 Agent</span></a></li>
+        <li><a class="card" href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer" data-keywords="cli terminal">Claude Code <span class="card-desc">终端 Agent</span></a></li>
+        <li><a class="card" href="https://codeium.com" target="_blank" rel="noopener noreferrer" data-keywords="windsurf">Windsurf / Codeium <span class="card-desc">IDE 助手</span></a></li>
+      </ul>
+    </section>
+
+    <section class="category" data-category="图像与视频">
+      <h2 class="category-title">图像与视频</h2>
+      <ul class="card-list">
+        <li><a class="card" href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer" data-keywords="mj 绘画">Midjourney <span class="card-desc">图像生成</span></a></li>
+        <li><a class="card" href="https://openai.com/dall-e" target="_blank" rel="noopener noreferrer" data-keywords="dalle">DALL·E <span class="card-desc">OpenAI</span></a></li>
+        <li><a class="card" href="https://www.adobe.com/products/firefly.html" target="_blank" rel="noopener noreferrer" data-keywords="adobe">Adobe Firefly <span class="card-desc">Adobe</span></a></li>
+        <li><a class="card" href="https://runwayml.com" target="_blank" rel="noopener noreferrer" data-keywords="视频">Runway <span class="card-desc">视频生成</span></a></li>
+        <li><a class="card" href="https://pika.art" target="_blank" rel="noopener noreferrer" data-keywords="短片">Pika <span class="card-desc">短视频</span></a></li>
+        <li><a class="card" href="https://jimeng.jianying.com" target="_blank" rel="noopener noreferrer" data-keywords="剪映 字节">即梦 <span class="card-desc">剪映系</span></a></li>
+        <li><a class="card" href="https://stability.ai" target="_blank" rel="noopener noreferrer" data-keywords="sd stable diffusion">Stability AI <span class="card-desc">Stable Diffusion</span></a></li>
+      </ul>
+    </section>
+
+    <section class="category" data-category="搜索与研究">
+      <h2 class="category-title">搜索与研究</h2>
+      <ul class="card-list">
+        <li><a class="card" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer" data-keywords="问答 引用">Perplexity <span class="card-desc">对话式搜索</span></a></li>
+        <li><a class="card" href="https://you.com" target="_blank" rel="noopener noreferrer" data-keywords="搜索">You.com <span class="card-desc">AI 搜索</span></a></li>
+        <li><a class="card" href="https://consensus.app" target="_blank" rel="noopener noreferrer" data-keywords="论文 学术">Consensus <span class="card-desc">学术文献</span></a></li>
+        <li><a class="card" href="https://www.semanticscholar.org" target="_blank" rel="noopener noreferrer" data-keywords="论文">Semantic Scholar <span class="card-desc">论文检索</span></a></li>
+        <li><a class="card" href="https://elicit.org" target="_blank" rel="noopener noreferrer" data-keywords="研究">Elicit <span class="card-desc">研究助手</span></a></li>
+      </ul>
+    </section>
+
+    <section class="category" data-category="语音与多媒体">
+      <h2 class="category-title">语音与多媒体</h2>
+      <ul class="card-list">
+        <li><a class="card" href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer" data-keywords="tts 配音">ElevenLabs <span class="card-desc">语音合成</span></a></li>
+        <li><a class="card" href="https://www.descript.com" target="_blank" rel="noopener noreferrer" data-keywords="剪辑 播客">Descript <span class="card-desc">音视频编辑</span></a></li>
+        <li><a class="card" href="https://www.notion.so/product/ai" target="_blank" rel="noopener noreferrer" data-keywords="笔记 文档">Notion AI <span class="card-desc">Notion</span></a></li>
+      </ul>
+    </section>
+
+    <section class="category" data-category="模型与平台">
+      <h2 class="category-title">模型与平台</h2>
+      <ul class="card-list">
+        <li><a class="card" href="https://huggingface.co" target="_blank" rel="noopener noreferrer" data-keywords="开源 数据集">Hugging Face <span class="card-desc">模型与数据集</span></a></li>
+        <li><a class="card" href="https://platform.openai.com" target="_blank" rel="noopener noreferrer" data-keywords="api">OpenAI Platform <span class="card-desc">API 控制台</span></a></li>
+        <li><a class="card" href="https://aistudio.google.com" target="_blank" rel="noopener noreferrer" data-keywords="google">Google AI Studio <span class="card-desc">Gemini API</span></a></li>
+        <li><a class="card" href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" data-keywords="api">Anthropic Console <span class="card-desc">Claude API</span></a></li>
+        <li><a class="card" href="https://replicate.com" target="_blank" rel="noopener noreferrer" data-keywords="推理 部署">Replicate <span class="card-desc">模型托管</span></a></li>
+        <li><a class="card" href="https://www.gradio.app" target="_blank" rel="noopener noreferrer" data-keywords="demo">Gradio <span class="card-desc">快速 Demo</span></a></li>
+      </ul>
+    </section>
+
+    <p class="empty-state" id="empty" hidden>没有匹配的站点，请尝试其他关键词。</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>链接仅供学习参考；请以各站官方说明为准。本站不托管任何第三方服务。</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
